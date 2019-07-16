@@ -1,0 +1,69 @@
+
+
+.card{
+  width: 20rem;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-group-item:hover{
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+.list-group-item:active{
+  background-color: grey;
+}
+
+.my-popup{
+  position: fixed;
+  z-index: 1;
+  display: none;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.my-animation{
+  animation: 0.5s bounce ease-out;
+}
+
+@keyframes bounce {
+  0% { transform: scaleX(1); }
+  50% { transform: scale(1.4); }
+  100% { transform: scaleX(1); }
+}
+
+.my-overlay{
+  position: fixed;
+  display: flex;
+  min-height: 100%;
+  min-width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-bg{
+  z-index: 2;
+}
+.my-bg img{
+  max-width: 70%;
+  max-height: auto !important;
+}
+.my-text{
+  z-index: 3;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 15rem;
+  text-shadow:  
+    -2px -2px 2px black, 
+    2px -2px 2px black,
+    -2px 2px 2px black,
+    2px 2px 2px black;
+}
